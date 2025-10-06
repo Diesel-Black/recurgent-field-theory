@@ -1,0 +1,167 @@
+% ==============================================================================
+% Recurgent Field Theory: The Dynamics of Geometric Coherence
+% ==============================================================================
+
+\documentclass[11pt, a4paper]{report}
+
+% --- Main Packages ---
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{setspace}
+
+% --- Font + Typesetting ---
+\usepackage{fontspec}
+\setmainfont{SourceSerif4-Regular.ttf}[
+    Path = fonts/,
+    BoldFont = SourceSerif4-SemiBold.ttf,
+    ItalicFont = SourceSerif4-Italic.ttf,
+    BoldItalicFont = SourceSerif4-SemiBoldItalic.ttf
+]
+\setmonofont{JetBrainsMono-Regular.ttf}[
+    Path = fonts/
+]
+
+\usepackage{unicode-math}
+\setmathfont{latinmodern-math.otf}
+
+\usepackage{microtype}
+
+% --- Page Geometry ---
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+% --- Chapter Titles ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\raggedright\hyphenpenalty=10000}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
+
+% --- Paragraphs ---
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+% --- Bibliography Config ---
+\usepackage[backend=bibtex, style=authoryear, sorting=nty, dashed=false]{biblatex}
+\addbibresource{../references.bib}
+\setlength{\bibitemsep}{0.5em}
+\setlength{\bibhang}{2em}
+
+% --- Hyperlink Config ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black!70,
+    filecolor=black!70,
+    urlcolor=black!70,
+    citecolor=black!70,
+    pdftitle={Recurgent Field Theory},
+    pdfpagemode=FullScreen,
+}
+
+% ==============================================================================
+% Manuscript Metadata
+% ==============================================================================
+
+\title{Recurgent Field Theory: \\ The Dynamics of Geometric Coherence \\ \vspace{1em} \small{(Draft)}}
+\author{Diesel Black}
+\date{Updated: \today}
+
+
+% ==============================================================================
+% Document Body
+% ==============================================================================
+
+\begin{document}
+\setstretch{1.25}
+
+\maketitle
+
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+Recurgent Field Theory (RFT) arose from the application of differential geometry to semantic database structures, specifically embedding spaces. The resulting mathematical framework presented here extends standard physical field theory into these spaces. It treats \textit{semantic meaning} as itself a measurable field quantity in a defined space equipped with recursive coupling mechanisms.
+
+\vspace{1em}
+
+We establish a pseudo-Riemannian Semantic Manifold \(\mathcal{M}\), within which concentrations of semantic mass curve its underlying geometry. Geometric curvature results in dynamic analogues of gravitational forces governing the formation and evolution of subsequent coherence. Recursive coupling tensors are employed to formalize self-reference as continuous fields generating complex feedback dynamics between local semantic activity and global manifold geometry. Deriving from fundamental principles, we find that bounded, observer-like regions arise naturally and exhibit properties mathematically analogous to agency, temporal directedness, and environmental coupling.
+
+\vspace{1em}
+
+RFT incorporates proposition-validation mechanisms to model the bidirectional temporal influence characteristic of interpretation. Existing semantic structures propose their relevance to potential future states, while present wisdom validates or rejects these propositions. A structure of this form permits retroactive reinterpretation, driving phase transitions in understanding (semantic reorganization). When recursive coupling exceeds critical thresholds, a system achieves autopoietic self-maintenance, regulated by emergent \textit{humility} and \textit{wisdom} constraints preventing pathological amplification or regression, respectively.
+
+\vspace{1em}
+
+We classify pathological information dynamics into twelve distinct signatures organized across four geometric categories. Each exhibits characteristic breakdown signatures in the field equations, orthogonal to the other eleven failure modes. The differential geometric structure we present allows for algorithmic detection of these configurations. Further, stable numerical discretizations on high-dimensional manifolds demonstrate the computational realizability of this theory as constructed.
+
+\vspace{1em}
+
+This work attempts to establish a mathematical bridge between field theory and practical applications in semantic analysis, cognitive modeling of mathematical intelligence, and systems of multi-agent coordination.
+
+\tableofcontents
+\input{chapters/ch_01_axiomatic_foundation.tex}
+\input{chapters/ch_02_field_index_and_formal_architecture.tex}
+\input{chapters/ch_03_semantic_manifold_and_metric_geometry.tex}
+\input{chapters/ch_04_recursive_coupling_and_depth_fields.tex}
+\input{chapters/ch_05_semantic_mass_and_attractor_dynamics.tex}
+\input{chapters/ch_06_recurgent_field_equation_and_lagrangian_mechanics.tex}
+\input{chapters/ch_07_autopoietic_function_and_phase_transitions.tex}
+\input{chapters/ch_08_wisdom_function_and_humility_constraint.tex}
+\input{chapters/ch_09_temporal_architectures_and_bidirectional_flow.tex}
+\input{chapters/ch_10_the_coupled_system_of_field_equations.tex}
+\input{chapters/ch_11_global_attractors_and_bifurcation_geometry.tex}
+\input{chapters/ch_12_metric_singularities_and_recursive_collapse.tex}
+\input{chapters/ch_13_agents_and_semantic_quanta.tex}
+\input{chapters/ch_14_inter_agent_communication.tex}
+\input{chapters/ch_15_symbolic_compression_and_renormalization.tex}
+\input{chapters/ch_16_pathologies_of_the_semantic_manifold.tex}
+\input{chapters/ch_17_computation_and_meta_recursion.tex}
+
+\appendix
+\chapter{Implementation Repository}
+\label{appendix:implementation}
+
+We demonstrate the computational realizability of Recurgent Field Theory in an expositive vector application, RICCI (Riemannian Intrinsic Coherence and Coupling Infrastructure), as described in preceding chapters. It is available at:
+
+\begin{center}
+\url{https://github.com/diesel-black/ricci}
+\end{center}
+
+The repository contains:
+\begin{itemize}
+\item PostgreSQL schema definitions of all geometric structures
+\item Detection and forecasting algorithms for twelve pathology classes
+\item Real-time embedding analysis of Semantic Manifolds
+\item Curvature tensor computations and recursive coupling analyses
+\item Operational monitoring and intervention protocols
+\item Mathematical evidence trails for enterprise audits and compliance
+\end{itemize}
+
+% ==============================================================================
+% Bibliography
+% ==============================================================================
+
+\printbibheading[title={References}]
+
+\printbibliography[keyword=math-logic, heading=subbibliography, title={Mathematics, Foundational Logic}]
+\printbibliography[keyword=physics-field-theory, heading=subbibliography, title={Physics, Field Theory}]
+\printbibliography[keyword=dynamical-systems, heading=subbibliography, title={Dynamic Systems, Chaos, Complexity}]
+\printbibliography[keyword=stat-mech, heading=subbibliography, title={Statistical Mechanics, Phase Transitions}]
+\printbibliography[keyword=info-computation, heading=subbibliography, title={Information, Computation, Algorithms}]
+\printbibliography[keyword=cybernetics-systems, heading=subbibliography, title={Cybernetics, Systems Theory}]
+\printbibliography[keyword=cog-sci-phil, heading=subbibliography, title={Cognitive Science, Philosophy of Mind}]
+\printbibliography[keyword=neuro-psych, heading=subbibliography, title={Neuroscience, Psychology}]
+\printbibliography[keyword=numerical-methods, heading=subbibliography, title={Numerical Methods, Computational Science}]
+\printbibliography[keyword=linguistics, heading=subbibliography, title={Linguistics, Semantics}]
+\printbibliography[keyword=interdisciplinary, heading=subbibliography, title={Interdisciplinary, Cultural Works}]
+
+\end{document} 
