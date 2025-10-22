@@ -6,16 +6,16 @@
 \section{Overview}
 \label{2.1:overview}
 
-Having established the axiomatic and conceptual groundwork, we now formalize these ideas with the full machinery of differential geometry. Here, each field and tensor embodies a distinct facet of the semantic landscape introduced in Chapter \ref{1:axiomatic_foundation}. The fields, tensors, and notations are drawn from differential geometry \autocite{Riemann1868, Lee2012}. We employ tensors because only they can naturally encode the kinds of nonlocal, multidimensional, and symmetry-rich relationships that recur in semantic structure.
+Each field and tensor here embodies a distinct facet of the semantic landscape introduced in Chapter \ref{1:axiomatic_foundation}. They, and their notation, are drawn from differential geometry \autocite{Riemann1868, Lee2012}. We employ tensors because only they can naturally encode the nonlocal, multidimensional, and symmetry-rich relationships that recur in semantic structure.
 
 % ------------------------------------------------------------------------------------------------
 
 \section{Tensor Ranks and Properties}
 \label{2.2:tensor_ranks_and_properties}
 
-The framework we set forth is pseudo-Riemannian and constructed on an \(n\)-dimensional manifold \(\mathcal{M}\), referred to as the \textit{Semantic Manifold}. The tensor rank and symmetry properties of each field encode its geometric information, while its domain and range encode its semantic content. The metric tensor \(g_{\mu\nu}\) establishes the foundational structure (\S\ref{1.1:axiom_1_semantic_manifold}). The semantic and coherence fields, \(\psi^\mu\) and \(C^\mu\), provide the dynamic content (\S\ref{1.2:axiom_2_fundamental_semantic_field}), while third- and fourth-rank tensors mediate the feedback loops that drive manifold evolution (\S\ref{1.3:axiom_3_recursive_coupling}). All tensor expressions employ the Einstein summation convention, detailed in Section \ref{2.4:tensor_conventions_and_notation}.
+The framework set forth is pseudo-Riemannian and constructed on an \(n\)-dimensional manifold \(\mathcal{M}\), referred to as the \textit{semantic manifold}. Each field's tensor rank and symmetry properties encode its geometric information, while its domain and range encode its semantic content. The metric tensor \(g_{\mu\nu}\) establishes the foundational structure (\S\ref{1.2.1:axiom_1_semantic_manifold}). The semantic and coherence fields, \(\psi^\mu\) and \(C^\mu\), provide the dynamic content (\S\ref{1.2.2:axiom_2_fundamental_semantic_field}), while third- and fourth-rank tensors mediate the feedback loops that drive manifold evolution (\S\ref{1.2.3:axiom_3_recursive_coupling}). All tensor expressions employ the Einstein summation convention, detailed in Section \ref{2.4:tensor_conventions_and_notation}.
 
-To describe how \textit{meaning} and coherence unfold in the manifold, we need to formalize not only the topology of the space itself, but also the flows, forces, and regulatory principles acting within it. We thus partition the mathematical objects of RFT into six categories, each reflecting a different layer of semantic reality.
+To describe how meaning and coherence behave in the manifold, we must formalize not only the topology of the space itself as well as the flows, forces, and regulatory principles acting within it. We thus partition the mathematical objects of Recurgent Field Theory into six categories, each reflecting a different layer of semantic reality.
 
 % ------------------------------------------------------------------------------------------------
 
@@ -317,6 +317,7 @@ Because semantic dynamics occur in a high-dimensional, non-Euclidean manifold, o
 \paragraph{Notation for Rotating Geometries.} When discussing effective rotation, we write \(g_{0\phi}(p,t)\) for an off-diagonal time–angle metric component in coordinates adapted to axial symmetry. It serves as a phenomenological marker of frame-dragging in semantic space and is referenced in Chapters~\ref{9:temporal_architectures_and_bidirectional_flow}, \ref{10:the_coupled_system_of_field_equations}, and \ref{12:metric_singularities_and_recursive_collapse}.
 
 % ------------------------------------------------------------------------------------------------
+
 \subsection{Index Notation and Einstein Summation}
 \label{2.4.1:index_notation_and_einstein_summation}
 
@@ -329,6 +330,7 @@ A_\mu B^\mu = \sum_{\mu=1}^n A_\mu B^\mu
 Index contraction, or summing over paired covariant and contravariant indices, produces objects of reduced rank while encoding the fundamental tensor operation structure. This notation proves essential for expressing field interactions, geometric relationships, and derivatives across arbitrary coordinate charts on \(\mathcal{M}\). It provides us with manifestly covariant formulations of feedback dynamics and self-reference relationships throughout the semantic architecture.
 
 % ------------------------------------------------------------------------------------------------
+
 \subsection{Metric and Index Raising/Lowering}
 \label{2.4.2:metric_and_index_raising_lowering}
 
@@ -425,9 +427,9 @@ with the guarantee that its value depends only on the field content, not on the 
 \subsection{Fundamental versus Derived Fields}
 \label{2.4.6:fundamental_versus_derived_fields}
 
-We distinguish between the fundamental dynamical variables and the quantities derived from them. The \textbf{semantic field}, \(\psi^\mu(p,t)\), represents the raw, underlying semantic content at each point of the manifold. It is the primary dynamical variable of the theory, encoding pure potentiality.
+We distinguish between the fundamental dynamical variables and the quantities derived from them. The \textbf{semantic field}, \(\psi^\mu(p,t)\), represents the raw, underlying semantic content at each point of the manifold. It is the fundamental field of the theory, encoding pure potentiality.
 
-The \textbf{coherence field}, \(C^\mu(p,t)\), is a derived object measuring the degree of self-consistency and alignment present in the semantic field. As an \(n\)-dimensional vector field, each component quantifies coherence along a principal semantic axis. Importantly, \(C^\mu\) is constructed as a nonlocal functional of \(\psi^\mu\):
+The \textbf{coherence field}, \(C^\mu(p,t)\), is a derived object measuring the degree of self-consistency and alignment present in the semantic field. It serves as the primary dynamical field whose evolution we compute. As an \(n\)-dimensional vector field, each component quantifies coherence along a principal semantic axis. Importantly, \(C^\mu\) is constructed as a nonlocal functional of \(\psi^\mu\):
 
 \begin{equation}
 C^\mu(p,t) = \mathcal{F}^\mu[\psi](p,t) = \int_{\mathcal{N}(p)} K^\mu_{\ \nu}(p,q) \psi^\nu(q,t) \, dq
@@ -435,7 +437,7 @@ C^\mu(p,t) = \mathcal{F}^\mu[\psi](p,t) = \int_{\mathcal{N}(p)} K^\mu_{\ \nu}(p,
 
 where \(K^\mu_{\ \nu}(p,q)\) is a kernel that may encode locality, similarity, or coupling between points.
 
-The theory is built such that only coherent, organized semantic content, rather than mere potential, drives system dynamics and observable structure. Accordingly, while the full dynamics can be expressed in terms of \(\psi^\mu\), the Lagrangian is formulated using \(C^\mu\) to maintain direct connection to the system's measurable, interpretable coherence.
+The theory is built such that only coherent and organized semantic content, rather than mere potentiality, drives system dynamics and observable structure. Accordingly, while the full dynamics can be expressed in terms of \(\psi^\mu\), the Lagrangian is formulated using \(C^\mu\) to maintain direct connection to the system's measurable, interpretable coherence.
 
 In physical analogy, this is akin to distinguishing between a quantum wavefunction (potentiality) and a probability density (actualization), or between a configuration field and an observable order parameter in statistical physics.
 
