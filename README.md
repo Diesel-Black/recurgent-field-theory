@@ -1,4 +1,4 @@
-# Recurgent Field Theory: The Dynamics of Geometric Coherence
+# Recurgent Field Theory: Geometry, Coherence, and Semantic Relativity
 
 ## Draft State
 
