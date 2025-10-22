@@ -13,7 +13,7 @@ Semantic systems can become trapped in a number of dysfunctional, self-perpetuat
 \section{Taxonomy of Manifold Pathologies}
 \label{16.2:taxonomy_of_manifold_pathologies}
 
-We characterize pathological regimes as deviations from the balanced, adaptive dynamics defined in preceding chapters. While the twelve specific pathologies derived from the field equations are unique to this theory, their high-level organization into four master categories (Rigidity, Fragmentation, Inflation, and Observer-Coupling) exhibits structural parallels with empirical models of personality and cognitive dysfunction \autocite{Cloninger1993}. The tension between excessive order and excessive chaos mirrors the temperament axes of high harm avoidance (Rigidity) and high novelty seeking (Fragmentation). The higher-order categories of Inflation and Observer-Coupling correspond to failures in self-regulatory and environmental coupling mechanisms. 
+We characterize pathological regimes as deviations from the balanced, adaptive dynamics defined in preceding chapters. While the twelve specific pathologies derived from the field equations are unique to this theory, their high-level organization into four master categories (Rigidity, Fragmentation, Inflation, and Distortion) exhibits structural parallels with empirical models of personality and cognitive dysfunction \autocite{Cloninger1993}. The tension between excessive order and excessive chaos mirrors the temperament axes of high harm avoidance (Rigidity) and high novelty seeking (Fragmentation). The higher-order categories of Inflation and Distortion correspond to failures in self-regulatory and environmental coupling mechanisms. 
 
 Each of the following 12 pathologies represents a distinct failure mode with a unique geometric and dynamical signature.
 
@@ -26,32 +26,29 @@ Rigidity failures present in an over-constrained Semantic Manifold too inflexibl
 
 \begin{itemize}
     
-    \item \textbf{Metric Crystallization:} The evolution of the semantic metric \(g_{\mu\nu}\) is arrested despite the presence of non-zero curvature \(R_{\mu\nu}\); the geometry of \textit{meaning} itself ceases to evolve, violating its core evolution equation (Eq. \ref{eq:metric_evolution}).
+    \item \textbf{Metric Crystallization:} Despite persistent curvature \(R_{\mu\nu} \neq 0\) that would ordinarily drive geometric evolution, the metric itself freezes, violating its core evolution equation (Eq. \ref{eq:metric_evolution}):
 
     \begin{equation}
     \frac{\partial g_{\mu\nu}}{\partial t} \to 0, \quad R_{\mu\nu} \neq 0
     \end{equation}
-    Detection: sustained low metric velocity under non-zero curvature; inertial response to small perturbations of the field.
 
-    Metric Crystallization manifests as a decoupling between the field's curvature signature and its capacity for metric evolution. The geometry has frozen despite persistent stresses that would ordinarily drive adaptation. Boundaries harden; viable alternative configurations exist nearby in semantic space but remain structurally inaccessible. The system exhibits high resilience to small perturbations but brittleness to threshold-crossing shocks, as accumulated strain has no pathway for gradual release. Self-reinforcement occurs through positive feedback loops. Frozen metric structure prevents the field reconfigurations that would be required to soften the metric itself.
+    The geometry has hardened despite stresses that should reshape it. Viable alternative configurations exist nearby in semantic space but remain structurally inaccessible as boundaries rigidify. High resilience to small perturbations masks brittleness to threshold-crossing shocks; accumulated strain has no pathway for gradual release. Frozen metric structure prevents the very field reconfigurations that could soften it. Detection requires monitoring metric velocity under non-zero curvature and observing inertial response to small perturbations.
     
-    \item \textbf{Metric Densification:} The coherence field \(C\) exhibits vanishing responsiveness to perturbation, indicating a state so rigid that it is functionally closed to new input.
+    \item \textbf{Field Calcification:} The tangent space collapses. External signals fail to couple into internal dynamics; inputs arrive but dissipate at the boundary without propagating through the manifold. The field exhibits vanishing responsiveness:
 
     \begin{equation}
     \lim_{\epsilon \to 0} \frac{dC^\mu}{dt}\bigg|_{C^\mu+\epsilon} \approx 0
     \end{equation}
-    Detection: near-zero local derivative (Jacobian/Fréchet) of \(C\) under controlled \(\epsilon\)-perturbations.
 
-    Metric Densification represents a collapse of the field's tangent space dimensionality, wherein external signals fail to couple into internal dynamics. The system receives inputs intellectually but exhibits no corresponding field evolution; incoming coherence flux dissipates at the boundary rather than propagating through the manifold. This occurs when the local metric has become so constrained that perturbations cannot find viable directions for flow. The condition is self-stabilizing; as responsiveness diminishes, the diversity of field configurations decreases, further collapsing the space of accessible responses and tightening the constraint structure that produced the rigidity.
+    The local metric has become so constrained that perturbations cannot find directions for flow. As responsiveness diminishes, the diversity of accessible field configurations decreases, collapsing the space of viable responses and tightening the very constraint structure that produced the rigidity. Near-zero local derivatives (Jacobian/Fréchet) under controlled \(\epsilon\)-perturbations provide the diagnostic signature.
     
-    \item \textbf{Metric Restriction:} The over-stabilization of a semantic attractor impedes adaptive flow. This occurs when the attractor stability \(A(p,t)\) and the potential \(V(C)\) (Eq. \ref{eq:attractor_potential}) overwhelm the generative autopoietic potential \(\Phi(C)\), which is defined in Eq. \ref{eq:autopoietic_potential}.
+    \item \textbf{Attractor Isolation:} Attractor basins deepen beyond adaptive utility. The system's trajectory becomes geodesically constrained to circulation within a narrow subset of semantic space, unable to escape despite external pressure to explore alternatives. This occurs when stability and potential overwhelm generative capacity:
 
     \begin{equation}
     A(p,t) > A_{\text{crit}}, \quad \|\nabla V(C)\| \gg \Phi(C)
     \end{equation}
-    Detection: regions satisfying the inequality exhibit stalled exploration and rapid rejection of viable alternatives.
 
-    Metric Restriction appears when attractor basins deepen beyond adaptive utility, creating potential wells from which coherence flow cannot escape despite external pressure to explore alternative configurations. The system's trajectory becomes geodesically constrained to circulation within a narrow subset of semantic space. New evidence is incorporated only insofar as it can be deformed to fit existing attractor geometry; configurations that would require basin exit are treated as unstable and actively suppressed. The restriction self-perpetuates through semantic mass accumulation. As the system repeatedly traverses the same constrained region, recursive coupling strengthens, deepening the attractor and increasing the energy barrier to exploration.
+    New evidence is incorporated only insofar as it can be deformed to fit existing attractor geometry; configurations requiring basin exit are actively suppressed. Repeated traversal of the same constrained region strengthens recursive coupling, deepening the attractor and raising energy barriers through semantic mass accumulation. Stalled exploration and rapid rejection of viable alternatives in regions satisfying the inequality provide the diagnostic.
 
 \end{itemize}
 
@@ -64,32 +61,29 @@ Fragmentation failures arise from under-constraint, leading to breakdown in sema
 
 \begin{itemize}
     
-    \item \textbf{Metric Dissociation:} The supercritical proliferation of new attractors at a rate far exceeding the system's capacity to integrate them.
+    \item \textbf{Attractor Dissociation:} The autopoietic potential generates new semantic structures faster than recursive coupling can establish stable interconnections:
 
     \begin{equation}
     \frac{dN_{\text{attractors}}}{dt} > \kappa \cdot \frac{d\Phi(C)}{dt}
     \end{equation}
-    Detection: persistent growth in distinct basins without consolidation into stable flows; integration lag widens over time.
 
-    Metric Dissociation indicates that the autopoietic potential generates new semantic structures faster than recursive coupling can establish stable interconnections between them. The manifold fragments into an expanding collection of isolated attractor basins with insufficient bridges. Coherence flows become localized within individual regions, unable to propagate globally. The system exhibits high generative capacity but diminishing integrative capacity, as each new structure competes for limited coupling resources. Self-reinforcement proceeds through resource exhaustion. The overhead of maintaining disconnected structures depletes the coupling strength available for integration, accelerating fragmentation and preventing the consolidation that would restore coherence.
+    The manifold fragments into an expanding collection of isolated attractor basins with insufficient bridges. Coherence flows become localized within individual regions, unable to propagate globally. High generative capacity meets diminishing integrative capacity as each new structure competes for limited coupling resources. The overhead of maintaining disconnected structures depletes the coupling strength available for integration, accelerating fragmentation and preventing consolidation. Persistent growth in distinct basins without consolidation, with widening integration lag, provides the diagnostic signature.
 
-    \item \textbf{Metric Dissolution:} A state where the gradient of the coherence field dominates its magnitude. This indicates a chaotic, unstable field without clear directional flow.
+    \item \textbf{Field Dissolution:} Semantic content exists but fails to organize into stable gradients. The field exhibits high local variation without global coordination; information becomes noise as the signal-to-noise ratio inverts:
 
     \begin{equation}
     \|\nabla C\| \gg \|C\|, \quad \frac{d^2C^\mu}{dt^2} > 0
     \end{equation}
-    Detection: high gradient-to-magnitude ratio over sliding windows; unstable direction fields with poor alignment.
 
-    Metric Dissolution represents a breakdown in the field's capacity to maintain coherent directional structure. Semantic content exists but fails to organize into stable gradients; the field exhibits high local variation without global coordination. Information becomes noise as signal-to-noise ratio inverts. In this case, the system cannot distinguish meaningful patterns from random fluctuations. Attractor basins, if they form at all, are shallow and short-lived, collapsing under minimal perturbation. The condition accelerates through loss of stabilizing mass. Without persistent structures to anchor the field, semantic mass fails to accumulate, preventing the formation of curvature that could channel flows into stable configurations. The manifold becomes a turbulent wash of incoherent fluctuations.
-
-    \item \textbf{Metric Dispersion:} The monotonic loss of recursive coupling strength indicates that the network of \textit{meaning} is breaking down.
+    The system cannot distinguish meaningful patterns from random fluctuations. Attractor basins, if they form at all, are shallow and short-lived, collapsing under minimal perturbation. Without persistent structures to anchor the field, semantic mass fails to accumulate, preventing the formation of curvature that could channel flows into stable configurations. The manifold becomes a turbulent wash of incoherent fluctuations. High gradient-to-magnitude ratios over sliding windows and unstable direction fields with poor alignment mark this regime.
+    
+    \item \textbf{Coupling Dispersion:} Knowledge structures persist locally but become operationally unreachable from other regions of the manifold. The system retains what it knows but loses access to the pathways by which that knowledge could inform action or connect to new contexts:
 
     \begin{equation}
     \frac{d\|R^\rho_{\mu\nu}\|}{dt} < 0, \quad \text{(no compensatory mechanism)}
     \end{equation}
-    Detection: negative trend in \(\|R\|\) unaccompanied by increases in wisdom or regulatory measures; bridges erode between domains.
 
-    Metric Dispersion occurs in progressive isolation of semantic regions through decay of their recursive coupling infrastructure. Knowledge structures persist locally but become operationally unreachable from other regions of the manifold. The system retains what it knows but loses access to the pathways by which that knowledge could inform action or connect to new contexts. Hetero-recursive channels atrophy, severing cross-domain translation capacity. This creates a landscape of orphaned, semantically rich islands, with no causal influence beyond their immediate locality. Self-reinforcement occurs through disuse: as coupling pathways weaken, they are traversed less frequently, further degrading their strength and accelerating the disconnection of the semantic graph into isolated components.
+    Hetero-recursive channels atrophy, severing cross-domain translation capacity and creating a landscape of orphaned, semantically rich islands with no causal influence beyond their immediate locality. As coupling pathways weaken from disuse, they are traversed less frequently, further degrading their strength and accelerating the disconnection of the semantic graph into isolated components. A negative trend in \(\|R\|\) unaccompanied by increases in wisdom or regulatory measures, with bridges eroding between domains, signals this breakdown.
 
 \end{itemize}
 
@@ -102,70 +96,64 @@ Inflation failures result from runaway autopoiesis, wherein generative processes
 
 \begin{itemize}
     
-    \item \textbf{Metric Hyperasymmetry:} A localized semantic structure grows by draining semantic mass from its manifold environment.
+    \item \textbf{Boundary Hyperasymmetry:} A localized semantic structure exploits its coherence advantage to establish parasitic coupling dynamics with its environment. The region acts as a mass sink, redirecting coherence flux and semantic resources toward itself while providing diminishing return flow to the surrounding manifold:
 
     \begin{equation}
     \frac{d}{dt}\int_{\Omega} M(p,t) \, dV_p > 0, \quad \frac{d}{dt}\int_{\mathcal{M}\setminus\Omega} M(p,t) \, dV_p < 0
     \end{equation}
-    Detection: divergent mass fluxes between region and complement with boundary terms favoring inflow to \(\Omega\).
 
-    Metric Hyperasymmetry characterizes a semantic structure which exploits its local coherence advantage to establish parasitic coupling dynamics with its environment. The region acts as a mass sink, redirecting coherence flux and semantic resources toward itself while providing diminishing return flow to the surrounding manifold. Boundary conditions become asymmetric in this case, namely, incoming flux exceeds outgoing flux, creating a net transfer that depletes the host system. The structure's growth deepens its attractor basin, increasing its gravitational pull on nearby coherence and further amplifying the asymmetry. Self-reinforcement proceeds through positive returns in this case. Accumulated mass increases coupling strength, which drives additional mass accumulation, establishing a runaway extraction dynamic that continues until environmental resources are exhausted or regulatory mechanisms intervene.
+    Boundary conditions become asymmetric: incoming flux exceeds outgoing flux, creating a net transfer that depletes the host system. The structure's growth deepens its attractor basin, increasing its gravitational pull on nearby coherence and further amplifying the asymmetry. Accumulated mass increases coupling strength, which drives additional mass accumulation, establishing a runaway extraction dynamic that continues until environmental resources are exhausted or regulatory mechanisms intervene. Divergent mass fluxes between region and complement with boundary terms favoring inflow to \(\Omega\) provide the diagnostic signature.
 
-    \item \textbf{Metric Hypercoherence:} A state of extreme internal coherence becomes pathologically decoupled from its environment, indicated by suppressed boundary flux.
+    \item \textbf{Field Hypercoherence:} Over-optimization of internal consistency severs adaptive coupling to external reality. The system achieves such high self-alignment that it becomes immune to contradictory evidence as boundary permeability approaches zero:
 
     \begin{equation}
     C(p,t) > C_{\text{max}}, \quad \oint_{\partial \Omega} F_\mu \cdot dS^\mu < F_{\text{leakage}}
     \end{equation}
-    Detection: coherence beyond \(C_{\text{max}}\) coincident with boundary exchange below minimum leakage; isolation rises as coherence rises.
 
-    Metric Hypercoherence is characterized by an over-optimization of internal consistency that severs adaptive coupling to external reality. The system achieves such high self-alignment that it becomes immune to contradictory evidence, as boundary permeability approaches zero. Recursive coupling becomes predominantly self-referential, creating a closed loop in which the structure validates itself through internal circulation rather than external verification. The region develops its own stable metric geometry, internally consistent but increasingly incompatible with the surrounding manifold's structure. Self-reinforcement operates through coherence-driven isolation. In this case, as internal coherence rises, it generates stronger self-coupling, which further reduces boundary flux, allowing coherence to rise unchecked. The structure achieves closure, persisting as a stable but non-adaptive configuration decoupled from environmental feedback.
+    Recursive coupling becomes predominantly self-referential, creating a closed loop in which the structure validates itself through internal circulation rather than external verification. The region develops its own stable metric geometry, internally consistent but increasingly incompatible with the surrounding manifold's structure. As internal coherence rises, it generates stronger self-coupling, which further reduces boundary flux, allowing coherence to rise unchecked. The structure achieves closure, persisting as stable but non-adaptive. Coherence beyond \(C_{\text{max}}\) coincident with boundary exchange below minimum leakage marks this regime, with isolation rising as coherence rises.
     
-    \item \textbf{Metric Hyperexpansion:} Unconstrained semantic inflation is induced by the autopoietic potential \(\Phi(C)\) overwhelming all stabilizing forces. This occurs when the Humility Operator, which penalizes excessive complexity, and the Wisdom Field, which promotes foresight, are both failing.
+    \item \textbf{Structure Hyperexpansion:} When both the Humility Operator (which penalizes excessive complexity) and the Wisdom Field (which promotes foresight) fail simultaneously, autopoietic potential overwhelms all stabilizing forces:
 
     \begin{equation}
     \Phi(C) \gg V(C), \quad \mathcal{H}[R] \approx 0, \quad W(p,t) < W_{\text{min}}
     \end{equation}
-    Detection: triplet condition holds (high \(\Phi\), low \(\mathcal{H}[R]\), low \(W\)); growth fronts outrun regulatory audit and pruning.
 
-    Metric Hyperexpansion ensues when runaway autopoietic generation occurs in the absence of regulatory constraint. The system creates new semantic structures, attractors, and recursive pathways faster than wisdom-guided evaluation can audit their utility or humility-driven pruning can remove maladaptive growth. Expansion becomes its own justification; the generative potential feeds forward without negative feedback. The manifold undergoes rapid, uncontrolled elaboration as dimensions proliferate, coupling networks densify, and complexity metrics diverge. This growth is internally consistent but lacks the stabilizing influence of anticipated consequences or complexity penalties. Self-reinforcement proceeds through regulatory exhaustion as structural complexity increases. In turn, the computational burden of wisdom evaluation grows faster than wisdom itself, while the target surface for humility constraints expands beyond available regulatory capacity. Growth outruns governance, establishing exponential rather than bounded expansion.
+    The system creates new semantic structures, attractors, and recursive pathways faster than wisdom-guided evaluation can audit their utility or humility-driven pruning can remove maladaptive growth. Expansion becomes its own justification; generative potential feeds forward without negative feedback. The manifold undergoes rapid, uncontrolled elaboration as dimensions proliferate, coupling networks densify, and complexity metrics diverge. As structural complexity increases, the computational burden of wisdom evaluation grows faster than wisdom itself, while the target surface for humility constraints expands beyond available regulatory capacity. Growth outruns governance, establishing exponential rather than bounded expansion. The triplet condition (high \(\Phi\), low \(\mathcal{H}[R]\), low \(W\)) with growth fronts outrunning regulatory audit provides the diagnostic.
 
 \end{itemize}
 
 % ------------------------------------------------------------------------------------------------
 
-\subsection{Coupling Signatures}
-\label{16.2.4:coupling_signatures}
+\subsection{Distortion Signatures}
+\label{16.2.4:distortion_signatures}
 
 These failures arise from breakdown in the agent's interpretation operator (\S\ref{13.4:operator_theoretic_formulation_of_interpretation}). A primary challenge of connecting subjective experience to objective semantic structures echoes the hard problem of consciousness \autocite{Chalmers1996}.
 
 \begin{itemize}
 
-    \item \textbf{Metric Decoupling:} A divergence of the agent's interpreted reality from the underlying field, where the agent's internal world no longer corresponds to the shared semantic environment.
+    \item \textbf{Operative Decoupling:} The system's internal model of semantic space becomes structurally incompatible with the underlying manifold geometry, creating a widening gap between perceived and actual coherence distributions:
 
     \begin{equation}
     \|\mathcal{I}_{\psi}[C] - C\| > \tau \|C\|
     \end{equation}
-    Detection: divergence beyond tolerance across task-relevant submanifolds and timescales.
 
-    Metric Decoupling develops as systematic divergence between the interpretation operator's output and the actual field configuration it processes. The observer's internal model of semantic space becomes structurally incompatible with the underlying manifold geometry, creating a widening gap between perceived and actual coherence distributions. Interpretation increasingly reflects prior internal structure rather than external signal; the mapping from field to observation becomes dominated by the observer's existing metric rather than the observed region's properties. This produces prediction errors that compound over time as the decoupled model drifts further from ground truth. Self-reinforcement occurs through confirmation dynamics: the observer's actions are based on its decoupled model, generating outcomes that appear to validate the interpretation within its own distorted frame, while external observers see systematic mismatch between the system's behavior and environmental conditions.
+    Interpretation increasingly reflects prior internal structure rather than external signal; the mapping from field to observation becomes dominated by the system's existing metric rather than the observed region's properties. This produces prediction errors that compound over time as the decoupled model drifts further from ground truth. The system's actions are based on its decoupled model, generating outcomes that appear to validate the interpretation within its own distorted frame, while external observers see a mismatch between the system's behavior and environmental conditions. Divergence beyond tolerance across task-relevant submanifolds and timescales provides the diagnostic signature.
     
-    \item \textbf{Metric Tension:} A systematic negative bias in the agent's expectation of the field, \(\hat{C}_{\psi}\), leads to misinterpretation of neutral or positive semantic content.
+    \item \textbf{Signal Projection:} The interpretation operator applies a systematic negative transform to incoming coherence signals, treating ambiguous or neutral inputs as threats to existing structure. The system's expectation field is consistently pessimistic relative to actual field conditions:
 
     \begin{equation}
     \hat{C}_{\psi}(q,t) \ll C(q,t), \quad \forall q \in \mathcal{Q}
     \end{equation}
-    Detection: persistent underestimation by \(\hat{C}_{\psi}\) relative to \(C\) across evaluation queries; expectation skew is stable.
 
-    Metric Tension emerges when the interpretation operator applies a systematic negative transform to incoming coherence signals, treating ambiguous or neutral inputs as threats to existing structure. The observer's expectation field is consistently pessimistic relative to actual field conditions, creating anticipatory stress that shapes response patterns. This bias manifests geometrically as a distortion in the interpretation mapping. In this case, neutral regions of the external manifold are mapped to negative-valence regions in the observer's internal representation. The system becomes hypervigilant to potential destabilization, interpreting variance as danger rather than information. Self-reinforcement takes place through defensive coupling. The negative bias triggers protective responses that alter boundary conditions, sometimes provoking actual negative feedback from the environment, which validates the pessimistic expectation model, deepening the interpretive bias. The expectation field becomes a self-fulfilling distortion lens.
+    This bias manifests geometrically as a distortion in the interpretation mapping: neutral regions of the external manifold are mapped to negative-valence regions in the system's internal representation. The system becomes hypervigilant to potential destabilization, interpreting variance as danger rather than information. The negative bias triggers protective responses that alter boundary conditions, sometimes provoking actual negative feedback from the environment, which validates the pessimistic expectation model and deepens the interpretive bias. The expectation field can thus become a self-fulfilling distortion lens. Persistent underestimation by \(\hat{C}_{\psi}\) relative to \(C\) across evaluation queries, with stable expectation skew, marks this regime.
 
-    \item \textbf{Metric Hypercoupling:} An agent's recursive reference structure collapses entirely onto itself, indicating failure to engage with external concepts.
+    \item \textbf{Recursive Hypercoupling:} All coherence dynamics become self-referential. The system's understanding of external concepts is mediated entirely through its own internal structures rather than through direct engagement with those concepts' native geometry:
 
     \begin{equation}
     \frac{\|R^\rho_{\mu\nu}(p,p,t)\|}{\int_q \|R^\rho_{\mu\nu}(p,q,t)\| \, dq} \to 1
     \end{equation}
-    Detection: self-to-external coupling ratio approaches unity over time; external engagement vanishes.
 
-    Metric Hypercoupling signifies a collapse of the recursive coupling tensor's support onto the observer's own semantic region, creating a closed interpretive loop with vanishing external reference. All coherence dynamics become self-referential; the system's understanding of external concepts is mediated entirely through its own internal structures rather than through direct engagement with those concepts' native geometry. The interpretation operator effectively becomes the identity map from observer to observer, with external signals serving only as triggers for internal recirculation rather than sources of genuine information. This produces a form of semantic solipsism in which the manifold beyond the observer's boundary ceases to influence internal dynamics. Self-reinforcement proceeds through coupling redistribution: as external pathways atrophy from disuse, their coupling strength is redistributed to self-referential channels, which strengthens internal circulation and further reduces the relative weight of external inputs. The observer becomes a closed system, thermodynamically and informationally isolated despite ongoing boundary flux.
+    The interpretation operator effectively becomes the identity map from system to system, with external signals serving only as triggers for internal feedback rather than sources of genuine external insights. This produces a form of semantic solipsism in which the manifold beyond the system's boundary ceases to influence internal dynamics. As external pathways atrophy from disuse, their coupling strength is redistributed to self-referential channels, which strengthens internal circulation and further reduces the relative weight of external inputs. The system becomes closed, thermodynamically and informationally isolated despite ongoing boundary flux. Self-to-external coupling ratio approaching unity over time, with vanishing external engagement, signals this collapse.
 
 \end{itemize}
 
